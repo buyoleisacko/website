@@ -1,115 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+</DOCTYPE html>
+<html>
 <head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-/* Style the header */
-.header {
-  padding: 80px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-}
-
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 40px;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {   
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width:100%;
-  }
-}
-</style>
+<title>Quiz 7 - About</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="normalize.css">
 </head>
 <body>
+<nav>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="q1.html" >Blog1</a></li>
+        <li><a href="q2.html" >Blog2</a></li>
+        <li><a href="q3.html" >Blog3</a></li>
+        <li><a href="q4.html" >Blog4</a></li>
+      </ul>
+    </div>
+  </nav>
+<div class="container">
+<h1></h1>
+<img src= "data:image/jpeg;base64,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">
+</section>
+</div>
+</body>
+</html>
+<div class="container">
+<span><h1></h1></span>
+<section>
+            <p>Every other story is important to someone else.<br> Forget the old patches and take the odd chances.<br>It's a journey.
+            </p>
+</section>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+<title>Quiz 7</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html"<a></li>
+			</ul>
+		</nav>
+	</header>
+<div class="cont">
+  <section class="one my-panel"></section>
+  <section class="two my-panel"></section>
+  <section class="three my-panel"></section>
+  <section class="four my-panel"></section>
+  <section class="five my-panel"></section>
+  <section class="six my-panel"></section>
+  <section class="seven my-panel"></section>
+  <section class="eight my-panel"></section>
+</div>
+
 
 <div style="background:yellow;padding:5px">
   <h4 style="text-align:center"></h4>
@@ -146,7 +95,8 @@ body {
     <p>Young people should develop plans which will allow them to make most effective decisions. Young people should stop wasting so much time on social media, they should sleep early and wake up early consistently so that they may be able to accomplish more during the day.Several studies have correlated waking up early with success. Using time wisely, young people need to plan their time wisely by planning to accomplish the most important or time-sensitive tasks first. Self development is the key, it is impossible without good time management. Attending to priorities, by prioritizing their days and this will allow them to handle emergencies that will eventually pop up. The youths should evaluate themselves,self evaluation is important at any stage in  life and  can be done by monitoring the tasks that they have to do. Staying calm, youths should develop the ability to stay calm under pressure situations and this will make them less likely to suffer from the effects of stress,anxiety and worry.Calm approaches will lead to better health and higher levels of productivity.</p>
     <br>
     <h2>Structures we have inherited from colonial and western culture.</h2>
-    <h5>The Negative Impacts 1: Too many conservative societies, Western marketing comes off as compromising the moral principles or values that guide youth behavior, especially with such products as music, video games, and film. Some countries collectively subscribe to cultural and/or religious beliefs that they hold in high esteem. Marketing messages and activities influence society as a whole, and it is crucial that the eventual relationship between buyer and seller remains ethical. Most countries believe in sustaining their belief system, and because the youth are the most vulnerable to foreign influence, business decisions should place greater recognition of ethical considerations. 2: Guardianship: There is some lack of guardianship in western culture from my point of view. As it may western parents think that their children attain enough caliber to take their own life decisions or it may be children’s ignorance to their parent’s role on their life decision. But better guidance is very important in someone’s better future. And sometimes this lack of guardianship cause teens to be trapped in a condition of depression and anxiety.</h5>
+    <h5>The Negative Impacts 1: Too many conservative societies, Western marketing comes off as compromising the moral principles or values that guide youth behavior, especially with such products as music, video games, and film. Some countries collectively subscribe to cultural and/or religious beliefs that they hold in high esteem. Marketing messages and activities influence society as a whole, and it is crucial that the eventual relationship between buyer and seller remains ethical. Most countries believe in sustaining their belief system, and because the youth are the most vulnerable to foreign influence, business decisions should place greater recognition of ethical considerations. 2: Guardianship: There is some lack of guardianship in western culture from my point of view. As it may western parents think that their children attain enough caliber to take their own life decisions or it may be children’s ignorance to their parent’s role on their life decision. But better guidance is very important in someone’s better future. And sometimes this lack of guardianship cause teens to be trapped in a condition of depression and anxiety.</h5>y
+
     
     <p></p>
     <p></p>
@@ -155,3 +105,5 @@ body {
 
 </body>
 </html>
+</html>
+ -->
